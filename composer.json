@@ -1,0 +1,65 @@
+{
+    "name": "ugarit/sanctum",
+    "description": "Ugarit Sanctum provides a featherweight authentication system for SPAs and simple APIs.",
+    "keywords": [
+        "ugarit",
+        "sanctum",
+        "auth"
+    ],
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/ugarit/sanctum/issues",
+        "source": "https://github.com/ugarit/sanctum"
+    },
+    "authors": [
+        {
+            "name": "Muath R Abu Ouda",
+            "email": "muathrabuouda@hotmail.com",
+            "role": "Vision Leader of Ugarit"
+        },
+        {
+            "name": "Taylor Otwell",
+            "email": "taylor@laravel.com",
+            "role": "Original Creator & Primary Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "ext-json": "*",
+        "heritage/console": "^1.00.00",
+        "heritage/contracts": "^1.00.00",
+        "heritage/database": "^1.00.00",
+        "heritage/support": "^1.00.00",
+        "symfony/console": "^7.0|^8.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.6",
+        "orchestra/testbench": "^9.15|^10.8|^11.0",
+        "phpstan/phpstan": "^1.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ugarit\\Sanctum\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ugarit\\Sanctum\\Tests\\": "tests/",
+            "Workbench\\App\\": "workbench/app/",
+            "Workbench\\Database\\Factories\\": "workbench/database/factories/"
+        }
+    },
+    "extra": {
+        "ugarit": {
+            "providers": [
+                "Ugarit\\Sanctum\\SanctumServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "version": "1.00.00"
+}

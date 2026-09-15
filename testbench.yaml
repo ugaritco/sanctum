@@ -1,0 +1,4 @@
+providers:
+  - Ugarit\Sanctum\SanctumServiceProvider
+migrations:
+  - database/migrations
